@@ -1,0 +1,27 @@
+= REST Docs
+Bancow;
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+
+[[검색]]
+=== 검색
+==== Curl Request
+include::{snippets}/search-controller-test/search/curl-request.adoc[]
+==== Http Request
+include::{snippets}/search-controller-test/search/http-request.adoc[]
+==== Http Response
+include::{snippets}/search-controller-test/search/http-response.adoc[]
+==== Httpie Request
+include::{snippets}/search-controller-test/search/httpie-request.adoc[]
+==== Request Body
+include::{snippets}/search-controller-test/search/request-body.adoc[]
+==== Request Fields
+include::{snippets}/search-controller-test/search/request-fields.adoc[]
+==== Response Body
+include::{snippets}/search-controller-test/search/response-body.adoc[]
+==== Response Fields
+include::{snippets}/search-controller-test/search/response-fields.adoc[]
