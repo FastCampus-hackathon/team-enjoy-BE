@@ -1,8 +1,11 @@
 package com.saramin.saraminback.domain.scrap.mapper;
 
+import java.util.List;
+
 import org.springframework.stereotype.Component;
 
 import com.saramin.saraminback.domain.scrap.dto.ScrapAddDto;
+import com.saramin.saraminback.domain.scrap.dto.ScrapExperienceResponseDto;
 import com.saramin.saraminback.domain.scrap.model.Scrap;
 
 @Component
@@ -39,6 +42,20 @@ public class ScrapMapper {
 			.expirationTimestamp(scrap.getExpirationTimestamp())
 			.closeType(scrap.getCloseType())
 			.openingTimestamp(scrap.getOpeningTimestamp())
+			.build();
+	}
+
+	public ScrapExperienceResponseDto toDtoList(
+		List<ScrapAddDto> newExperienceDto,
+		List<ScrapAddDto> experienceDto,
+		List<ScrapAddDto> bothExperienceDto,
+		List<ScrapAddDto> anyExperienceDto
+	) {
+		return ScrapExperienceResponseDto.builder()
+			.newExperience(newExperienceDto)
+			.experience(experienceDto)
+			.bothExperience(bothExperienceDto)
+			.anyExperience(anyExperienceDto)
 			.build();
 	}
 }
