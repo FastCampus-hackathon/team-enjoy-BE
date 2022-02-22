@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.saramin.saraminback.domain.scrap.dto.ScrapAddDto;
-import com.saramin.saraminback.domain.scrap.model.Scrap;
+import com.saramin.saraminback.domain.scrap.dto.ScrapExperienceResponseDto;
 import com.saramin.saraminback.domain.scrap.service.ScrapService;
 
 import lombok.RequiredArgsConstructor;
@@ -37,6 +37,14 @@ public class ScrapController {
 		List<ScrapAddDto> scraps = scrapService.getScrap();
 
 		return ResponseEntity.ok(scraps);
+	}
+
+	@GetMapping("/experience")
+	public ResponseEntity getExperience() {
+
+		ScrapExperienceResponseDto experience = scrapService.getExperience();
+
+		return ResponseEntity.ok(experience);
 	}
 
 }
