@@ -12,4 +12,7 @@ public interface ScrapMongoDBRepository extends MongoRepository<Scrap, String> {
 	List<Scrap> findByPositionExperienceLevelCode(int code);
 
 	List<Scrap> findByIdIn(List<String> id);
+
+	@Query("{ 'position.requiredEducationLevel.code' : ?0 } } }")
+	List<Scrap> findByPositionRequiredEducationLevel(String code);
 }

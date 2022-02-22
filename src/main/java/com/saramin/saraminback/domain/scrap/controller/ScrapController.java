@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.saramin.saraminback.domain.scrap.dto.ScrapAddDto;
+import com.saramin.saraminback.domain.scrap.dto.ScrapEducationResponseDto;
 import com.saramin.saraminback.domain.scrap.dto.ScrapExperienceResponseDto;
 import com.saramin.saraminback.domain.scrap.dto.ScrapCompareListDto;
 import com.saramin.saraminback.domain.scrap.service.ScrapService;
@@ -46,8 +47,16 @@ public class ScrapController {
 		ScrapExperienceResponseDto experience = scrapService.getExperience();
 
 		return ResponseEntity.ok(experience);
-  }
-  
+	}
+
+	@GetMapping("/education")
+	public ResponseEntity getEducationLevel() {
+
+		ScrapEducationResponseDto educationLevel = scrapService.getEducationLevel();
+
+		return ResponseEntity.ok(educationLevel);
+	}
+
 	@PostMapping("/compare")
 	public ResponseEntity getScrapCompare(@RequestBody ScrapCompareListDto scrapCompareListDto) {
 

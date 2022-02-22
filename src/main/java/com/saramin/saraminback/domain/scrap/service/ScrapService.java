@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 import org.springframework.stereotype.Service;
 
 import com.saramin.saraminback.domain.scrap.dto.ScrapAddDto;
+import com.saramin.saraminback.domain.scrap.dto.ScrapEducationResponseDto;
 import com.saramin.saraminback.domain.scrap.dto.ScrapExperienceResponseDto;
 import com.saramin.saraminback.domain.scrap.dto.ScrapCompareListDto;
 import com.saramin.saraminback.domain.scrap.mapper.ScrapMapper;
@@ -55,4 +56,17 @@ public class ScrapService {
 				Collectors.toList());
 	}
 
+
+	public ScrapEducationResponseDto getEducationLevel() {
+		List<ScrapAddDto> anyEducationLevel = scrapMongoDBRepository.findByPositionRequiredEducationLevel("0").stream()
+			.map(scrapMapper::toScrapAddDto).collect(Collectors.toList());
+		List<ScrapAddDto> highschoolLevel = scrapMongoDBRepository.findByPositionRequiredEducationLevel("6").stream().
+			map(scrapMapper::toScrapAddDto).collect(Collectors.toList());
+		List<ScrapAddDto> univEducationLevel = scrapMongoDBRepository.findByPositionRequiredEducationLevel("7").stream().
+			map(scrapMapper::toScrapAddDto).collect(Collectors.toList());
+		List<ScrapAddDto> univ4yearEducationLevel = scrapMongoDBRepository.findByPositionRequiredEducationLevel("8").stream()
+			.map(scrapMapper::toScrapAddDto).collect(Collectors.toList());
+		return scrapMapper.toUnivDtoList(
+			anyEducationLevel, highschoolLevel, univEducationLevel, univ4yearEducationLevel);
+	}
 }

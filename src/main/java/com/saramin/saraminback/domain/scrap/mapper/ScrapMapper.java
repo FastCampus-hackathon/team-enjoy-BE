@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Component;
 
 import com.saramin.saraminback.domain.scrap.dto.ScrapAddDto;
+import com.saramin.saraminback.domain.scrap.dto.ScrapEducationResponseDto;
 import com.saramin.saraminback.domain.scrap.dto.ScrapExperienceResponseDto;
 import com.saramin.saraminback.domain.scrap.model.Scrap;
 
@@ -56,6 +57,21 @@ public class ScrapMapper {
 			.experience(experienceDto)
 			.bothExperience(bothExperienceDto)
 			.anyExperience(anyExperienceDto)
+			.build();
+	}
+
+
+	public ScrapEducationResponseDto toUnivDtoList(
+		List<ScrapAddDto> any,
+		List<ScrapAddDto> highschool,
+		List<ScrapAddDto> univ,
+		List<ScrapAddDto> univ4year
+	) {
+		return ScrapEducationResponseDto.builder()
+			.any(any)
+			.highschool(highschool)
+			.univ(univ)
+			.univ4year(univ4year)
 			.build();
 	}
 }
