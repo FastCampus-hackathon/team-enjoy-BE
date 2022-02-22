@@ -86,3 +86,19 @@ include::{snippets}/scrap-controller-test/get-experience/httpie-request.adoc[]
 include::{snippets}/scrap-controller-test/get-experience/response-body.adoc[]
 ==== Response Fields
 include::{snippets}/scrap-controller-test/get-experience/response-fields.adoc[]
+
+
+=== 학력별 분류
+==== Curl Request
+include::{snippets}/scrap-controller-test/get-education-level/curl-request.adoc[]
+==== Http Request
+include::{snippets}/scrap-controller-test/get-education-level/http-request.adoc[]
+==== Http Response
+include::{snippets}/scrap-controller-test/get-education-level/http-response.adoc[]
+==== Httpie Request
+include::{snippets}/scrap-controller-test/get-education-level/httpie-request.adoc[]
+==== Response Body
+include::{snippets}/scrap-controller-test/get-education-level/response-body.adoc[]
+==== Response Fields
+include::{snippets}/scrap-controller-test/get-education-level/response-fields.adoc[]
+
