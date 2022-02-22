@@ -7,5 +7,5 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import com.saramin.saraminback.domain.scrap.model.Scrap;
 
 public interface ScrapMongoDBRepository extends MongoRepository<Scrap, String> {
-
+	List<Scrap> findByIdIn(List<String> id);
 }
