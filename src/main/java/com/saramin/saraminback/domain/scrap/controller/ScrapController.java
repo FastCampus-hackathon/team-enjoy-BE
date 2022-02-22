@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.saramin.saraminback.domain.scrap.dto.ScrapAddDto;
 import com.saramin.saraminback.domain.scrap.dto.ScrapExperienceResponseDto;
+import com.saramin.saraminback.domain.scrap.dto.ScrapCompareListDto;
 import com.saramin.saraminback.domain.scrap.service.ScrapService;
 
 import lombok.RequiredArgsConstructor;
@@ -26,7 +27,7 @@ public class ScrapController {
 	public ResponseEntity addScrap(@RequestBody List<ScrapAddDto> scrapAddDto) {
 		System.out.println(scrapAddDto);
 
-		   scrapService.addScrap(scrapAddDto);
+		scrapService.addScrap(scrapAddDto);
 
 		return ResponseEntity.ok("저장됨");
 	}
@@ -45,6 +46,14 @@ public class ScrapController {
 		ScrapExperienceResponseDto experience = scrapService.getExperience();
 
 		return ResponseEntity.ok(experience);
+  }
+  
+	@PostMapping("/compare")
+	public ResponseEntity getScrapCompare(@RequestBody ScrapCompareListDto scrapCompareListDto) {
+
+		List<ScrapAddDto> scraps = scrapService.getScrapCompare(scrapCompareListDto);
+
+		return ResponseEntity.ok(scraps);
 	}
 
 }

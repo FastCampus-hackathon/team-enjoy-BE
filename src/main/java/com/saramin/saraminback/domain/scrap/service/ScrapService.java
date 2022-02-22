@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.saramin.saraminback.domain.scrap.dto.ScrapAddDto;
 import com.saramin.saraminback.domain.scrap.dto.ScrapExperienceResponseDto;
+import com.saramin.saraminback.domain.scrap.dto.ScrapCompareListDto;
 import com.saramin.saraminback.domain.scrap.mapper.ScrapMapper;
 import com.saramin.saraminback.domain.scrap.repository.ScrapMongoDBRepository;
 
@@ -15,8 +16,8 @@ import lombok.RequiredArgsConstructor;
 @Service
 @RequiredArgsConstructor
 public class ScrapService {
-		private final ScrapMapper scrapMapper;
-		private final ScrapMongoDBRepository scrapMongoDBRepository;
+	private final ScrapMapper scrapMapper;
+	private final ScrapMongoDBRepository scrapMongoDBRepository;
 
 	public void addScrap(List<ScrapAddDto> scrapAddDto) {
 		System.out.println(scrapAddDto);
@@ -45,22 +46,13 @@ public class ScrapService {
 			newExperienceDto, experienceDto, bothExperienceDto, anyExperienceDto);
 	}
 
-	// public List<Scrap> getCloseType() {
-	// 	// return scrapMongoDBRepository.findByPositionExperienceLevelCode(1)
-	// 	// 	.stream().map(scrap -> scrapMapper.toScrapAddDto(scrap))
-	// 	// 	.collect(Collectors.toList());
-	// 	return scrapMongoDBRepository.findByCloseTypeCode("1");
-	// }
-	//
-	// public List<Scrap> getTitle() {
-	// 	return scrapMongoDBRepository.findByPositionTitle("JAVA 프로그램 개발 (SI 및 SM) 경력자 모집");
-	// }
-	//
-	// public List<Scrap> findByActive() {
-	// 	return scrapMongoDBRepository.findByActive();
-	// }
-	//
-	// public List<Scrap> findByModificationTimestamp() {
-	// 	return scrapMongoDBRepository.findByModificationTimestamp("1645432945");
-	// }
+
+	public List<ScrapAddDto> getScrapCompare(ScrapCompareListDto scrapCompareListDto) {
+		return scrapMongoDBRepository.findByIdIn(scrapCompareListDto.getId())
+			.stream()
+			.map(scraps -> scrapMapper.toScrapAddDto(scraps))
+			.collect(
+				Collectors.toList());
+	}
+
 }

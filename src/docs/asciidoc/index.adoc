@@ -54,3 +54,17 @@ include::{snippets}/scrap-controller-test/get-scrap/http-response.adoc[]
 include::{snippets}/scrap-controller-test/get-scrap/httpie-request.adoc[]
 ==== Response Body
 include::{snippets}/scrap-controller-test/get-scrap/response-body.adoc[]
+
+=== 스크랩 공고비교
+==== Curl Request
+include::{snippets}/scrap-controller-test/get-scrap-compare/curl-request.adoc[]
+==== Http Request
+include::{snippets}/scrap-controller-test/get-scrap-compare/http-request.adoc[]
+==== Http Response
+include::{snippets}/scrap-controller-test/get-scrap-compare/http-response.adoc[]
+==== Httpie Request
+include::{snippets}/scrap-controller-test/get-scrap-compare/httpie-request.adoc[]
+==== Response Body
+include::{snippets}/scrap-controller-test/get-scrap-compare/response-body.adoc[]
+==== Response Fields
+include::{snippets}/scrap-controller-test/get-scrap-compare/response-fields.adoc[]
