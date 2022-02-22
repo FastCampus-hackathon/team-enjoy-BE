@@ -23,13 +23,13 @@ ext {
     set("snippetsDir", file("build/generated-snippets"))
 }
 
-
 dependencies {
     implementation ("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation ("org.springframework.boot:spring-boot-starter-validation")
     implementation ("org.springframework.boot:spring-boot-starter-web")
     implementation("io.micrometer:micrometer-core:1.8.2")
     implementation("com.googlecode.json-simple:json-simple:1.1.1")
+    implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")
     runtimeOnly( "com.h2database:h2")

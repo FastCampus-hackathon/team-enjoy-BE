@@ -15,7 +15,7 @@ import com.saramin.saraminback.domain.search.service.SearchService;
 import lombok.RequiredArgsConstructor;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/apis")
 @RequiredArgsConstructor
 public class SearchController {
 

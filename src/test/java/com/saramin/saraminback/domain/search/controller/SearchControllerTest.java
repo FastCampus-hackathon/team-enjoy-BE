@@ -19,7 +19,7 @@ class SearchControllerTest extends TestSupport {
 	@Test
 	void search() throws Exception {
 		mockMvc.perform(
-			post("/api/search")
+			post("/apis/search")
 				.contentType(MediaType.APPLICATION_JSON)
 				.content(readJson("json/search/search.json"))
 		)

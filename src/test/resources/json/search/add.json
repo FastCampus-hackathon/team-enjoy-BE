@@ -1,0 +1,116 @@
+[
+  {
+    "url": "http://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=42388328&utm_source=job-search-api&utm_medium=api&utm_campaign=saramin-job-search-api",
+    "active": 1,
+    "company": {
+      "detail": {
+        "href": "http://www.saramin.co.kr/zf_user/company-info/view?csn=2148634194&utm_source=job-search-api&utm_medium=api&utm_campaign=saramin-job-search-api",
+        "name": "(주)패션플러스"
+      }
+    },
+    "position": {
+      "title": "(주)패션플러스 경력사원 채용 (IT 부문)",
+      "industry": {
+        "code": "304",
+        "name": "쇼핑몰·오픈마켓"
+      },
+      "location": {
+        "code": "102190",
+        "name": "경기 &gt; 성남시 분당구"
+      },
+      "job-type": {
+        "code": "1",
+        "name": "정규직"
+      },
+      "job-mid-code": {
+        "code": "2,4",
+        "name": "IT개발·데이터,총무·법무·사무"
+      },
+      "job-code": {
+        "code": "84,87,92,184,204,255,407,142,199,205,209,222,229,236,277,279,293,302",
+        "name": "B2C,쇼핑몰,전자상거래,백엔드/서버개발,웹개발,프론트엔드,.NET,C#,MSSQL,사이트관리,API,ASP,C++,CSS,Git,HTML,Javascript,React,ReactJS,SQL,TypeScript"
+      },
+      "experience-level": {
+        "code": 2,
+        "min": 2,
+        "max": 5,
+        "name": "경력 2~5년"
+      },
+      "required-education-level": {
+        "code": "0",
+        "name": "학력무관"
+      }
+    },
+    "keyword": "B2C,쇼핑몰,전자상거래",
+    "salary": {
+      "code": "99",
+      "name": "면접후 결정"
+    },
+    "id": "42388328",
+    "posting-timestamp": "1645433324",
+    "modification-timestamp": "1645433323",
+    "opening-timestamp": "1645430400",
+    "expiration-timestamp": "1646405999",
+    "close-type": {
+      "code": "1",
+      "name": "접수마감일"
+    }
+  },
+  {
+    "url": "http://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=42388245&utm_source=job-search-api&utm_medium=api&utm_campaign=saramin-job-search-api",
+    "active": 1,
+    "company": {
+      "detail": {
+        "href": "http://www.saramin.co.kr/zf_user/company-info/view?csn=3068112489&utm_source=job-search-api&utm_medium=api&utm_campaign=saramin-job-search-api",
+        "name": "대신네트웍스(주)"
+      }
+    },
+    "position": {
+      "title": "JAVA 프로그램 개발 (SI 및 SM) 경력자 모집",
+      "industry": {
+        "code": "301",
+        "name": "솔루션·SI·ERP·CRM"
+      },
+      "location": {
+        "code": "105030",
+        "name": "대전 &gt; 서구"
+      },
+      "job-type": {
+        "code": "1,2,9",
+        "name": "정규직,계약직,프리랜서"
+      },
+      "job-mid-code": {
+        "code": "2",
+        "name": "IT개발·데이터"
+      },
+      "job-code": {
+        "code": "84,87,92,101,194,235,89",
+        "name": "SI·시스템통합,소프트웨어개발,솔루션업체,백엔드/서버개발,웹개발,프론트엔드,SI개발,Ajax,Java,유지보수"
+      },
+      "experience-level": {
+        "code": 3,
+        "min": 4,
+        "max": 0,
+        "name": "신입/경력"
+      },
+      "required-education-level": {
+        "code": "7",
+        "name": "대학졸업(2,3년)이상"
+      }
+    },
+    "keyword": "SI·시스템통합,소프트웨어개발,솔루션업체",
+    "salary": {
+      "code": "99",
+      "name": "면접후 결정"
+    },
+    "id": "42388245",
+    "posting-timestamp": "1645432945",
+    "modification-timestamp": "1645432945",
+    "opening-timestamp": "1645430400",
+    "expiration-timestamp": "1650639599",
+    "close-type": {
+      "code": "1",
+      "name": "접수마감일"
+    }
+  }
+]

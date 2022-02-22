@@ -25,3 +25,32 @@ include::{snippets}/search-controller-test/search/request-fields.adoc[]
 include::{snippets}/search-controller-test/search/response-body.adoc[]
 ==== Response Fields
 include::{snippets}/search-controller-test/search/response-fields.adoc[]
+
+[[스크랩]]
+=== 스크랩 저장
+==== Curl Request
+include::{snippets}/scrap-controller-test/add-scrap/curl-request.adoc[]
+==== Http Request
+include::{snippets}/scrap-controller-test/add-scrap/http-request.adoc[]
+==== Http Response
+include::{snippets}/scrap-controller-test/add-scrap/http-response.adoc[]
+==== Httpie Request
+include::{snippets}/scrap-controller-test/add-scrap/httpie-request.adoc[]
+==== Request Body
+include::{snippets}/scrap-controller-test/add-scrap/request-body.adoc[]
+==== Request Fields
+include::{snippets}/scrap-controller-test/add-scrap/request-fields.adoc[]
+==== Response Body
+include::{snippets}/scrap-controller-test/add-scrap/response-body.adoc[]
+
+=== 스크랩 배포
+==== Curl Request
+include::{snippets}/scrap-controller-test/get-scrap/curl-request.adoc[]
+==== Http Request
+include::{snippets}/scrap-controller-test/get-scrap/http-request.adoc[]
+==== Http Response
+include::{snippets}/scrap-controller-test/get-scrap/http-response.adoc[]
+==== Httpie Request
+include::{snippets}/scrap-controller-test/get-scrap/httpie-request.adoc[]
+==== Response Body
+include::{snippets}/scrap-controller-test/get-scrap/response-body.adoc[]
